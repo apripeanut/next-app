@@ -43,9 +43,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* RIGHT SIDE */}
           <div className="relative flex justify-center items-center">
-            {/* DECORATIVE SQUARE 1 */}
             <div
               className="
             absolute
