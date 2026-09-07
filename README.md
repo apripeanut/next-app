@@ -1,4 +1,4 @@
-##Portfolio Reference vs. Next.js Replication
+## Portfolio Reference vs. Next.js Replication
 <img width="1862" height="925" alt="Screenshot 2026-09-07 185840" src="https://github.com/user-attachments/assets/f2e2b658-41ed-4b3c-998e-0e14d7f6c495" />
 <img width="1876" height="921" alt="Screenshot 2026-09-07 185848" src="https://github.com/user-attachments/assets/d7169a01-f963-4f15-b078-4b57c05dd3e2" />
 
