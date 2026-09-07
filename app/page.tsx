@@ -1,31 +1,96 @@
 import Image from "next/image";
+import profilePic from "../image/profile2.jpg";
+import beachside from "../image/beachside.jpg";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center font-sans bg-amber-100">
-      <img
-        className="z-0"
-        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2478585.jpg&f=1&nofb=1&ipt=3db8927fd5a65b0b9cc3e49fa56e14db5a7c597f06e3fc82230c6810f1ae11c2"
+    <main className="relative min-h-screen overflow-hidden">
+      <Image
+        src={beachside}
         alt="Beach Background"
+        className="absolute inset-0 h-full w-full object-cover z-0"
       />
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 sm:items-start absolute z-10">
-        <h1 className="font-sans no-underline text-6xl">
-          I am Jezcois Reuben Garganza!
-        </h1>
-        <div className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 border-4 rounded-4xl bg-amber-200 border-blue-950">
-          <h1 className="text1">Enjoying the summer times!</h1>
-          <h2 className="text2">
-            Waving by the seaside with Hellos and Goodbyes!
-          </h2>
+
+      <div className="relative z-10 min-h-screen flex items-center px-10 py-20">
+        <div className="w-full max-w-7xl mx-auto grid md:grid-cols-[1fr_450px] items-center gap-20">
+          <div>
+            <h1 className="text-5xl md:text-7xl font-black text-blue-950 mb-8">
+              I'm Jezcois Reuben Garganza!
+            </h1>
+
+            <div
+              className="
+            bg-amber-100
+            border-4
+            border-blue-950
+            rounded-3xl
+            min-h-[280px]
+            flex flex-col
+            items-center
+            justify-center
+            text-center
+            px-10
+            gap-10
+          "
+            >
+              <h2 className="text-3xl font-bold text-blue-950">
+                Enjoying the summer times!
+              </h2>
+
+              <p className="text-2xl font-bold text-blue-950">
+                Waving by the seaside with Hellos and Goodbyes!
+              </p>
+            </div>
+          </div>
+
+          {/* RIGHT SIDE */}
+          <div className="relative flex justify-center items-center">
+            {/* DECORATIVE SQUARE 1 */}
+            <div
+              className="
+            absolute
+            w-[430px]
+            h-[430px]
+            border-4
+            border-amber-400
+            rounded-3xl
+            rotate-45
+            z-0
+          "
+            />
+
+            <div
+              className="
+            absolute
+            w-[400px]
+            h-[400px]
+            border-4
+            border-orange-500
+            rounded-3xl
+            -rotate-[28deg]
+            z-0
+          "
+            />
+
+            <Image
+              src={profilePic}
+              alt="Profile pic"
+              width={450}
+              height={450}
+              className="
+            relative
+            z-20
+            w-[450px]
+            h-[450px]
+            object-cover
+            rounded-[90px]
+            border-2
+            border-red-700
+          "
+            />
+          </div>
         </div>
-        <Image
-          className="z-20"
-          src="/image/profile2.jpg"
-          alt="profile pic"
-          width={960}
-          height={944}
-        />
-      </main>
-    </div>
+      </div>
+    </main>
   );
 }
